@@ -1,0 +1,157 @@
+html, body{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #361f2d; /*COLOR DE FONDO DE PÁGINA*/
+    flex-direction: column;
+    padding-top: 65px;
+}
+
+/*CABECERA*/
+.header{
+    width: 80%;
+    height: 65px;
+    padding: 0 10%;
+    display: flex;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 1000;
+    flex-shrink: 0;
+    background-color: #63203d; /*COLOR DEL MENÚ*/
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*LOGO*/
+.header .logo_nav{
+    height: 60px;
+    width: auto;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+
+.header .logo_nav:hover{
+    transform: scale(1.2);
+}
+
+/*ELEMENTOS DEL MENÚ*/
+.header nav ul{
+    list-style: none;
+}
+
+.header nav ul li{
+    display: inline-block;
+    padding: 0 20px;
+    transition: all 0.1s;
+    border: none;
+    height: 20px;
+}
+
+.header nav ul li:hover{
+    transform: scale(1.1);
+}
+
+.header nav ul li > a{
+    color: #e4e6c3; /*COLOR DE ELEMENTOS DEL MENÚ*/
+    text-decoration: none;
+    padding-bottom: 24px;
+}
+
+.header nav ul li a:hover{
+    color: #88baa3; /*COLOR DE ELEMENTOS DEL MENÚ SELECCIONADOS*/
+}
+
+/*DESPLEGABLES*/
+.header nav ul li ul{
+    position: absolute;
+    display: none;
+    text-decoration: none;
+    width: 200px;
+    background-color: #e4e6c3; /*COLOR FONDO DEL DESPLEGABLE*/
+}
+
+.header nav ul li:hover ul, .header nav ul li ul:hover{
+    display: block;
+    margin: 7px 0px;
+    padding: 0 0 10px 0;
+}
+
+.header nav ul li ul li a{
+    color: #63203d;
+    padding: 0 0 0 20px;
+}
+
+.header nav ul li ul li {
+    padding: 10px 0px;
+}
+
+/*ICONO FLECHAS*/
+.fa-chevron-down{
+    color: #e4e6c3; /*COLOR DE FLECHA ICONO DESPLEGABLE*/
+}
+
+.header nav ul li a:hover i{
+    transition: all 0.2s;
+    transform: translateY(2px) rotate(180deg);
+    color: #88baa3; /*COLOR DE FLECHA ICONO DESPLEGABLE SELECCIONADA*/
+}
+
+/*BOTÓN*/
+.header .btn_contact button{
+    padding: 9px 20px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #63203d; /*COLOR TEXTO DEL BOTÓN*/
+    background-color: #e4e6c3; /*COLOR DEL BOTÓN*/
+    border: 2px solid #63203d;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.header .btn_contact button:hover{
+    color: #e4e6c3;
+    background-color: #63203d;
+    border:2px solid #e4e6c3;
+}
+
+/*CUERPO*/
+.main{
+    margin: auto;
+    padding: 50px;
+    width: 60%;
+    height: 100%;
+    background-color: #e4e6c3;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    flex-grow: 1;
+}
+/*TABLA*/
+.main table{
+    width: 70%;
+    border-collapse: collapse;
+    margin: auto;
+}
+.main td{
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    color: black;
+}
+.main thead{
+    font-size: 18px;
+}
+.main tbody td:last-child p{
+    text-align: left;
+    font-weight: normal;
+}
+.main tbody td:nth-child(3) img{
+    width: 50px;
+    height: 50px;
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/objetos_style.css">
+    <script src="https://kit.fontawesome.com/fd85c1a586.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <title>The Past Wiki</title>
+</head>
+<body>
+  <header class="header">
+    <div>
+      <!--LOGO DEL MENÚ-->
+      <a href="index.html"><img class="logo_nav" src="./images/logothepast.png"></a>
+    </div>
+    <nav>
+      <!--LISTA DEL MENÚ PARTE 1-->
+      <ul>
+        <li><a class="elemento_nav" href="index.html">INICIO</a></li>
+        <li><a class="elemento_nav" href="">PERSONAJES</a></li>
+        
+        <!--DESPLEGABLE ENEMIGOS-->
+        <li>
+          <a class="elemento_nav desplegable_nav" href="">ENEMIGOS
+              <i class="fa-solid fa-chevron-down"></i>
+          </a>
+          <ul>
+            <li><a href="">Enemigos comunes</a></li>
+            <li><a href="">Enemigos especiales</a></li>
+            <li><a href="">Jefes</a></li>
+          </ul>
+        </li>
+
+        <!--DESPLEGABLE OBJETOS-->
+        <li>
+          <a class="elemento_nav desplegable_nav" href="objetos.html">OBJETOS
+            <i class="fa-solid fa-chevron-down"></i>
+          </a>
+          <ul>
+            <li><a href="objetos.html">Objetos activos</a></li>
+            <li><a href="objetos.html">Objetos pasivos</a></li>
+            <li><a href="objetos.html">Objetos de un uso</a></li>
+          </ul>
+        </li>
+
+        <!--LISTA DEL MENÚ PARTE 2-->
+        <li><a class="elemento_nav" href="">MUNDO</a></li>
+      </ul>
+    </nav>
+    <a href="" class="btn_contact">
+      <button>Contacto</button>
+    </a>
+  </header>
+  <main class="main">
+    <table>
+      <thead>
+        <td>Nombre</td>
+        <td>ID</td>
+        <td>Icono</td>
+        <td>Descripción</td>
+      </thead>
+      <tbody>
+        <tr>
+          <td>SETA MÁGICA</td>
+          <td>00</td>
+          <td>
+            <img src="./images/items_icons/Collectible_Magic_Mushroom_icon.png">
+          </td>
+          <td>
+            <p>+1 HP</p>
+            <p>+0.3 Daño</p>
+            <p>+1.5 Rango</p>
+            <p>Aumenta el tamaño del sprite de tu jugador, pero no aumenta el área de colisión.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>HALO DE MOSCAS</td>
+          <td>01</td>
+          <td>
+            <img src="./images/items_icons/Collectible_Halo_of_Flies_icon.png">
+          </td>
+          <td>
+            <p>Le da al jugador 2 moscas orbitales que bloquean los disparos enemigos.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>EL PARÁSITO</td>
+          <td>02</td>
+          <td>
+            <img src="./images/items_icons/Collectible_The_Parasite_icon.png">
+          </td>
+          <td>
+            <p>Los disparos del jugador ahora se dividen en dos al entrar en contacto con los enemigos o el entorno.</p>
+            <p>Los nuevos proyectiles causan menos daño &#40;daño del jugador * 0.5&#41;.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>PIRÓMANO</td>
+          <td>03</td>
+          <td>
+            <img src="./images/items_icons/Collectible_Pyromaniac_icon.png">
+          </td>
+          <td>
+            <p>+5 Bombas</p>
+            <p>Todas las explosiones curan al jugador 0.5 HP en vez de dañarlo.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+</body>
+</html>
