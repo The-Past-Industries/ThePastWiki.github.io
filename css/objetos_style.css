@@ -30,7 +30,7 @@ body{
 .header{
     width: 80%;
     height: 65px;
-    padding: 0 10%;
+    padding: 0px 10%;
     display: flex;
     position: fixed;
     top:0;
@@ -149,6 +149,7 @@ body{
     padding: 0px;
     border: 1px solid whitesmoke;
     border-radius: 15px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
 .github_header{
@@ -257,12 +258,12 @@ body{
 /*CUERPO*/
 .main{
     margin: 0 auto;
-    padding: 50px;
+    padding: 25px 50px;
     width: 60%;
     min-width: 400px;
     box-sizing: border-box;
     background-color: #e4e6c3;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.6);
     text-align: center;
 }
 /*TABLA*/
