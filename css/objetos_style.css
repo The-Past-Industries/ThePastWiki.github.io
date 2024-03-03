@@ -134,19 +134,25 @@ body{
 }
 /*TABLA*/
 .main table{
+    
     width: 70%;
     border-collapse: collapse;
     margin: auto;
 }
-.main td{
+.main td, .main th{
     border: 1px solid black;
     padding: 10px;
     text-align: center;
     color: black;
 }
 .main thead{
+    background-color: rgba(121, 121, 121, 0.8);
     font-size: 18px;
+    position: sticky;
+    top: 63px;
+    z-index: 100;
 }
+
 .main tbody td:last-child p{
     text-align: left;
     font-weight: normal;
