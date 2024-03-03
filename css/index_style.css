@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Isaac';
+    src: url('../fonts/IsaacGame.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
 html, body{
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
@@ -10,7 +17,12 @@ html, body{
 
 body{
     background-color: #361f2d; /*COLOR DE FONDO DE PÁGINA*/
-    flex-direction: column;
+    
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
     padding-top: 65px;
 }
 
@@ -18,7 +30,7 @@ body{
 .header{
     width: 80%;
     height: 65px;
-    padding: 0 10%;
+    padding: 0px 10%;
     display: flex;
     position: fixed;
     top:0;
@@ -120,4 +132,138 @@ body{
     color: #e4e6c3;
     background-color: #63203d;
     border:2px solid #e4e6c3;
+}
+
+/*ASIDE GITHUB & KICKSTARTER*/
+.aside{
+    position: fixed;
+    height: 100%;
+    width: 16%;
+    min-width: 200px;
+}
+
+.github_div{
+    z-index: 100;
+    margin-top: 13%;
+    margin-left: 10%;
+    padding: 0px;
+    border: 1px solid whitesmoke;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.github_header{
+    display: flex;
+    flex-direction: row;
+    border-radius: 15px 15px 0 0;
+    background-color: #1f2328;
+    color: whitesmoke;
+}
+
+.github_header img{
+    margin: 4%;
+    height: 20%;
+    width: 20%;
+    min-width: 50px;
+    min-height: 50px;
+    border: 1px solid whitesmoke;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.github_header div{
+    display: inline-block;
+}
+
+.github_header div p:first-child{
+    width: 100%;
+    margin: 15% 0px 2px 0px;
+    font-size: 20px;
+}
+.github_header div p:last-child{
+    width: 100%;
+    margin: 0px 0px 5% 5px;
+    font-size: 11px;
+}
+
+.github_div > img{
+    width: 100%;
+    transition: all 0.9s;
+}
+.github_div > img:hover{
+    z-index: 200;
+    border: 1px solid whitesmoke;
+    transform: scale(3);
+    translate: 100% 100%;
+}
+
+.github_footer_text{
+    padding: 5px;
+
+    background-color: #f7ffd8;
+    border: 1px solid whitesmoke;
+
+    font-family: 'Isaac', sans-serif;
+    font-weight: 200;
+    font-size: 18px;
+}
+
+.github_footer_text p{
+    margin: 5px;
+}
+
+.github_footer_text span{
+    font-weight: bold;   
+    font-size: 14px;
+}
+
+.github_footer_text span:first-child{
+    color: #1f2328;
+}
+.github_footer_text span:nth-child(2){
+    color: #404041;
+}
+.github_footer_text span:last-child{
+    color: #85c442;
+}
+
+.github_footer_links{
+    background-color: #3c444e;
+    border-radius: 0px 0px 15px 15px;
+}
+
+.github_footer_links div{
+    padding: 10px 15px;
+}
+
+.github_footer_links div a{
+    text-decoration: none;
+}
+
+.github_footer_links div a span{
+    margin: 0px;
+    color: darkgray;
+    font-size: 12px;
+}
+.github_footer_links div i{
+    color: whitesmoke;
+    margin: 0px 2%;
+}
+.github_footer_links hr{
+    width: 90%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/*CUERPO*/
+.main{
+    margin: 0 50%;
+    transform: translate(-50%);
+    padding: 25px 50px;
+    width: 60%;
+    min-width: 400px;
+    box-sizing: border-box;
+    background-color: #e4e6c3;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.6);
+    text-align: center;
 }
