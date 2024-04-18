@@ -188,18 +188,10 @@ body{
 
 .github_div > img{
     width: 100%;
-    transition: all 0.9s;
-}
-.github_div > img:hover{
-    z-index: 200;
-    border: 1px solid whitesmoke;
-    transform: scale(3);
-    translate: 100% 100%;
 }
 
 .github_footer_text{
     padding: 5px;
-
     background-color: #f7ffd8;
     border: 1px solid whitesmoke;
 
