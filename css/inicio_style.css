@@ -1,0 +1,180 @@
+/*
+:root{
+    --nav-color: rgb(99, 32, 61);
+    --high-light-color: rgb(136, 186, 163);
+    --bold-font-color: rgb(228, 230, 195);
+    --background-body-color: rgb(228, 230, 195);
+    --background-html-color: rgb(54, 31, 45);
+}
+*/
+
+:root{
+    --nav-color: rgb(0, 4, 19);
+    --high-light-color: rgb(150, 215, 235);
+    --font-color: rgb(242, 228, 249);
+    --background-body-color: rgb(131, 156, 181);
+    --background-html-color: rgb(242, 228, 249);
+}
+
+body, html{
+    font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    color: var(--font-color);
+    background-color: var(--background-html-color);
+}
+a{
+    text-decoration: none;
+}
+.aside img{
+    width: 1px;
+}
+
+/*
+    MENU
+*/
+.menu-header, .menu-header nav{
+    background-color: var(--nav-color);
+}
+.menu-header{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+/*
+    LOGO
+*/
+.logo_div, .logo_div a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo_div a{
+    height: 100%;
+    width: 100%;
+}
+.logo_div a h1{
+    color: var(--font-color);
+    width: 100px;
+    font-weight: bolder;
+    font-size: 1rem;
+}
+.logo_nav{
+    border-radius: 50%;
+    width: 50px;
+    height: auto;
+}
+.menu-header ul{
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    font-weight: 800;
+}
+.menu-header ul li{
+    margin: 1rem 1rem;
+
+    text-align: center;
+}
+.menu-header ul li a{
+    font-size: 0.9em;
+    color: var(--font-color);
+}
+
+
+
+
+
+
+/*
+    MENU-MOVIL
+*/
+.menu-movil-header{
+    display: none;
+}
+/*
+    CONTENEDOR PRINCIPAL
+*/
+#contenedor-principal{
+    display: grid;
+    grid-template-columns: 0.75fr 3fr 0.75fr;
+    grid-row: auto;
+}
+
+/*
+    ASIDE
+*/
+#github-button{
+    display: none;
+}
+.aside{
+    grid-column: 1/2;
+}
+
+/*
+    MAIN
+*/
+.main{
+    grid-column: 2/3;
+}
+
+/*
+    MEDIA QUERIES
+*/
+@media screen and (max-width: 1450px){
+    /* MENU */
+    /* MENU-MOVIL */
+    /* CONTENEDOR PRINCIPAL */
+    /* ASIDE */
+    /* MAIN */
+}
+@media screen and (max-width: 1280px){
+    /* MENU */
+    /* MENU-MOVIL */
+    /* CONTENEDOR PRINCIPAL */
+    /* ASIDE */
+    /* MAIN */
+}
+@media screen and (max-width: 900px){
+    /* MENU */
+    /* MENU-MOVIL */
+    /* CONTENEDOR PRINCIPAL */
+    /* ASIDE */
+    /* MAIN */
+}
+@media screen and (max-width: 800px){
+    /* MENU */
+    /* MENU-MOVIL */
+    /* CONTENEDOR PRINCIPAL */
+    /* ASIDE */
+    /* MAIN */
+}
+@media screen and (max-width: 650px){
+    /* MENU */
+    .menu-header{
+        display: none;
+    }
+    .menu-movil-header{
+        display: block;
+    }
+    /* MENU-MOVIL */
+
+    /* CONTENEDOR PRINCIPAL */
+    #contenedor-principal{
+        display: block;
+    }
+    /* ASIDE */
+    #github-button{
+        display: block;
+    }
+    .aside{
+        position: fixed;
+        display: none;
+    }
+    /* MAIN */   
+}
