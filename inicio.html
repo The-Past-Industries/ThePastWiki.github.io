@@ -55,20 +55,40 @@
   <!--MENU MOVIL-->
   <header class="menu-movil-header">
     <nav>
-      <div id="logo-menu-movil">
-        <img src="" alt="Logo">
-      </div>
       <div>
-        <i class="fa-solid fa-bars"></i>
-        <i class="fa-solid fa-bars-staggered"></i>
-        <ul>
-          <li><a href="#">INICIO</a></li>
-          <li><a href="#">PERSONAJES</a></li>
-          <li><a href="#">ENEMIGOS</a></li>
-          <li><a href="#">OBJETOS</a></li>
-          <li><a href="#">MUNDO</a></li>
-          <li><a href="#">CONTACTO</a></li>
-        </ul>
+        <div id="logo-menu-movil">
+          <img src="./images/logo_01.png" alt="Logo">
+        </div>
+        <div>
+          <h1>The Past</h1>
+        </div>
+      </div>
+      <div id="icono-despl-menu-movil">
+        <i class="fa-solid fa-bars fa-2xl" tabindex="0" onclick="desplegarMenu()"></i>
+        <div id="despl-menu-movil">
+          <ul>
+            <li><a href="#">
+              INICIO
+            </a></li>
+            <li><a href="#">
+              PERSONAJES
+            </a></li>
+            <li><a href="#">
+              <i class="fa-solid fa-skull"></i>
+              ENEMIGOS
+            </a></li>
+            <li><a href="#">
+              OBJETOS
+            </a></li>
+            <li><a href="#">
+              MUNDO
+            </a></li>
+            <li><a href="#">
+              <i class="fa-solid fa-address-book"></i>
+              CONTACTO
+            </a></li>
+          </ul>
+        </div>
       </div>
     </nav>
   </header>
@@ -113,7 +133,18 @@
   <!--MAIN-->
   <main class="main">
     <p>hola</p>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
   </main>
   </div>
 </body>
+<script>
+  function desplegarMenu() {
+    var menu = document.getElementById('despl-menu-movil');
+    if (menu.style.display === 'block') {
+      menu.style.display = 'none';
+    } else {
+      menu.style.display = 'block';
+    }
+  }
+  </script>
 </html>
