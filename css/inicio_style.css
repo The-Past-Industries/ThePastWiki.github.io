@@ -25,6 +25,8 @@ body, html{
 /*
     MENU-MOVIL
 */
+
+/* HEADER Y NAV */
 .menu-header{
     display: none;
 }
@@ -34,39 +36,41 @@ body, html{
 }
 .menu-movil-header nav{
     height: 100px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
 }
 .menu-movil-header nav div:nth-child(1){
-    display: flex;
-    flex-direction: row;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto;
     align-items: center;
-    justify-content: center;
-    width: 50%;
-    height: 100%;
 }
 
+/* LOGO */
 #logo-menu-movil{
-    width: 20%;
+    display: block;
+        columns: 1 / 2;
 }
 #logo-menu-movil img{
     height: 100px;
 }
-.menu-movil-header h1{
-    margin: 0 20px;
-    font-size: 42px;
+
+/* TITLE */
+.menu-movil-header nav div div:nth-child(2){
+    columns: 2 / 3;
 }
+.menu-movil-header h1{
+    margin: 0 50px;
+    font-size: 7vw;
+}
+
+/* DESPLEGABLE BUT*/
 #icono-despl-menu-movil{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    columns: 3 / 4;
     width: 5%;
     height: auto;
 }
 
-
+/* DESPLEGABLE */
 #despl-menu-movil{
     background-color: var(--nav-color);
     display: none;
@@ -76,16 +80,20 @@ body, html{
     width: 100%;
 }
 #despl-menu-movil ul{
+    padding: 0;
     list-style: none;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 }
 #despl-menu-movil a{
+    margin: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
     margin: 20px 2vw;
     width: 100%;
     font-size: 24px;
@@ -193,3 +201,39 @@ body, html{
 @media screen and (min-width: 768px){
     
 }
+
+/*----------------MOVIL GRANDE-----------------------*/
+@media screen and (min-width: 546px){
+    .menu-movil-header, .menu-movil-header nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    }
+    .menu-movil-header nav div:nth-child(1){
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    height: 100%;
+    }
+    #logo-menu-movil {
+    width: 20%;
+    }
+    .menu-movil-header h1{
+    margin: 0 20px;
+    font-size: 42px;
+    }
+    #despl-menu-movil a{
+        font-size: 20px;
+    }
+    #icono-despl-menu-movil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+}
+
+
+

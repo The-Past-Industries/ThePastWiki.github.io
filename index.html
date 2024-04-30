@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!--CSS-->
-  <link rel="stylesheet" href="./css/index_style.css">
+  <link rel="stylesheet" href="./css/inicio_style.css">
 
   <!--ICONS-->
   <script src="https://kit.fontawesome.com/fd85c1a586.js" crossorigin="anonymous"></script>
@@ -12,45 +12,36 @@
   <!--FONTS-->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+  
 
   <!--TITLE-->
   <title>The Past Wiki</title>
 </head>
 <body>
-  <header class="header">
-    <div>
+  <!--MENU-->
+  <header class="menu-header">
+    <div class="logo_div">
       <!--LOGO DEL MENÚ-->
-      <a href="index.html"><img class="logo_nav" src="./images/logothepast.png"></a>
+      <a href="index.html"><img class="logo_nav" src="./images/logo_01.png">
+        <h1>The Past</h1>
+      </a>
     </div>
     <nav>
       <!--LISTA DEL MENÚ PARTE 1-->
       <ul>
-        <li><a class="elemento_nav" href="index.html">INICIO</a></li>
+        <li>
+          <a class="elemento_nav" href="index.html">
+            <i class="fa-solid fa-house-blank"></i>
+            INICIO
+          </a>
+        </li>
         <li><a class="elemento_nav" href="">PERSONAJES</a></li>
         
         <!--DESPLEGABLE ENEMIGOS-->
-        <li>
-          <a class="elemento_nav desplegable_nav" href="">ENEMIGOS
-              <i class="fa-solid fa-chevron-down"></i>
-          </a>
-          <ul>
-            <li><a href="">Enemigos comunes</a></li>
-            <li><a href="">Enemigos especiales</a></li>
-            <li><a href="">Jefes</a></li>
-          </ul>
-        </li>
+        <li><a class="elemento_nav desplegable_nav" href="">ENEMIGOS</a></li>
 
         <!--DESPLEGABLE OBJETOS-->
-        <li>
-          <a class="elemento_nav desplegable_nav" href="objetos.html">OBJETOS
-            <i class="fa-solid fa-chevron-down"></i>
-          </a>
-          <ul>
-            <li><a href="objetos.html">Objetos activos</a></li>
-            <li><a href="objetos.html">Objetos pasivos</a></li>
-            <li><a href="objetos.html">Objetos de un uso</a></li>
-          </ul>
-        </li>
+        <li><a class="elemento_nav desplegable_nav" href="objetos.html">OBJETOS</a></li>
 
         <!--LISTA DEL MENÚ PARTE 2-->
         <li><a class="elemento_nav" href="">MUNDO</a></li>
@@ -60,42 +51,107 @@
       <button>Contacto</button>
     </a>
   </header>
-
-  <!--ASIDE GITHUB & KICKSTARTER-->
-    <aside class="aside">
-      <div class="github_div">
-        <div class="github_header">
-          <img src="images/logoindustries.png" alt="The Past Industries">
-          <div>  
-            <p>The Past Industries</p>
-            <p>Github & Kickstarter</p>
-          </div>
+  
+  <!--MENU MOVIL-->
+  <header class="menu-movil-header">
+    <nav>
+      <div>
+        <div id="logo-menu-movil">
+          <img src="./images/logo_01.png" alt="Logo">
         </div>
-        <img src="images/game_preview1.png" alt="Preview del proyecto.">
-        <div class="github_footer_text">
-          <p>Puedes seguir el proyecto de cerca en <span>GITHUB</span> y apoyar nuestro <span>KICK</span><span>STARTER</span>.</p>
+        <div>
+          <h1>The Past</h1>
         </div>
-        <div class="github_footer_links">
-          <div>
-            <a href="https://github.com/The-Past-Industries">
-              <i class="fa-brands fa-github fa-xl"></i>
-              <span>The Past Industries en Github</span>
-            </a>
-          </div>
-          <hr>
-          <div>
-            <a href="https://www.kickstarter.com">
-              <i class="fa-brands fa-kickstarter fa-xl"></i>
-              <span>Nuestro Kickstarter</span>
-            </a>
-          </div>
+        <div id="icono-despl-menu-movil">
+          <i class="fa-solid fa-bars fa-2xl" tabindex="0" onclick="desplegarMenu()"></i>
         </div>
       </div>
-    </aside>
+      <div id="despl-menu-movil">
+        <ul>
+          <li><a href="#">
+            <i class="fa-solid fa-house-chimney"></i>
+            INICIO
+          </a></li>
+          <li><a href="#">
+            <i class="fa-solid fa-person-hiking"></i>
+            PERSONAJES
+          </a></li>
+          <li><a href="#">
+            <i class="fa-solid fa-skull"></i>
+            ENEMIGOS
+          </a></li>
+          <li><a href="#">
+            <i class="fa-solid fa-shield-halved"></i>
+            OBJETOS
+          </a></li>
+          <li><a href="#">
+            <i class="fa-solid fa-globe"></i>
+            MUNDO
+          </a></li>
+          <li><a href="#">
+            <i class="fa-solid fa-address-book"></i>
+            CONTACTO
+          </a></li>
+        </ul>
+      </div>
+      
+    </nav>
+  </header>
+
+  <!--CONTENEDOR PRINCIPAL-->
+  <div id="contenedor-principal">
+  <!--ASIDE GITHUB & KICKSTARTER-->
+  <div id="github-button">
+    <i class="fa-brands fa-github fa-xl"></i>
   </div>
+  <aside class="aside">
+    <div class="github_div">
+      <div class="github_header">
+        <img src="images/logoindustries.png" alt="The Past Industries">
+        <div>  
+          <p>The Past Industries</p>
+          <p>Github & Kickstarter</p>
+        </div>
+      </div>
+      <img src="images/game_preview1.png" alt="Preview del proyecto.">
+      <div class="github_footer_text">
+        <p>Puedes seguir el proyecto de cerca en <span>GITHUB</span> y apoyar nuestro <span>KICK</span><span>STARTER</span>.</p>
+      </div>
+      <div class="github_footer_links">
+        <div>
+          <a href="https://github.com/The-Past-Industries">
+            <i class="fa-brands fa-github fa-xl"></i>
+            <span>The Past Industries en Github</span>
+          </a>
+        </div>
+        <hr>
+        <div>
+          <a href="https://www.kickstarter.com">
+            <i class="fa-brands fa-kickstarter fa-xl"></i>
+            <span>Nuestro Kickstarter</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </aside>
+
   <!--MAIN-->
   <main class="main">
-    
+    <p>hola</p>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
   </main>
+  </div>
 </body>
+
+<script>
+  function desplegarMenu() {
+    var menu = document.getElementById('despl-menu-movil');
+    if (menu.style.display === 'block') {
+      menu.style.display = 'none';
+    } else {
+      menu.style.display = 'block';
+    }
+  }
+  </script>
+
 </html>
