@@ -27,28 +27,34 @@
       </a>
     </div>
     <nav>
-      <!--LISTA DEL MENÚ PARTE 1-->
+      <!--OPCIONES DEL MENÚ-->
       <ul>
-        <li>
-          <a class="elemento_nav" href="index.html">
-            <i class="fa-solid fa-house-blank"></i>
+        <li><a class="elemento_nav" href="index.html">
+          <i class="fa-solid fa-house-chimney"></i>
             INICIO
-          </a>
-        </li>
-        <li><a class="elemento_nav" href="">PERSONAJES</a></li>
-        
-        <!--DESPLEGABLE ENEMIGOS-->
-        <li><a class="elemento_nav desplegable_nav" href="">ENEMIGOS</a></li>
-
-        <!--DESPLEGABLE OBJETOS-->
-        <li><a class="elemento_nav desplegable_nav" href="objetos.html">OBJETOS</a></li>
-
-        <!--LISTA DEL MENÚ PARTE 2-->
-        <li><a class="elemento_nav" href="">MUNDO</a></li>
+        </a></li>
+        <li><a class="elemento_nav" href="#">
+          <i class="fa-solid fa-person-hiking"></i>
+          PERSONAJES
+        </a></li>       
+        <li><a class="elemento_nav" href="#">
+          <i class="fa-solid fa-skull"></i>
+          ENEMIGOS
+        </a></li>
+        <li><a class="elemento_nav" href="index.html">
+          <i class="fa-solid fa-shield-halved"></i>
+          OBJETOS
+        </a></li>
+        <li><a class="elemento_nav" href="#">
+          <i class="fa-solid fa-globe"></i>
+          MUNDO
+        </a></li>
       </ul>
     </nav>
-    <a href="" class="btn_contact">
-      <button>Contacto</button>
+    <!--BOTÓN DE CONTACTO-->
+    <a href="#" class="btn_contacto">
+      <i class="fa-solid fa-address-book"></i>
+      CONTACTO
     </a>
   </header>
   
@@ -100,46 +106,106 @@
 
   <!--CONTENEDOR PRINCIPAL-->
   <div id="contenedor-principal">
-  <!--ASIDE GITHUB & KICKSTARTER-->
-  <div id="github-button">
-    <i class="fa-brands fa-github fa-xl"></i>
-  </div>
-  <aside class="aside">
-    <div class="github_div">
-      <div class="github_header">
-        <img src="images/logoindustries.png" alt="The Past Industries">
-        <div>  
-          <p>The Past Industries</p>
-          <p>Github & Kickstarter</p>
-        </div>
-      </div>
-      <img src="images/game_preview1.png" alt="Preview del proyecto.">
-      <div class="github_footer_text">
-        <p>Puedes seguir el proyecto de cerca en <span>GITHUB</span> y apoyar nuestro <span>KICK</span><span>STARTER</span>.</p>
-      </div>
-      <div class="github_footer_links">
-        <div>
-          <a href="https://github.com/The-Past-Industries">
-            <i class="fa-brands fa-github fa-xl"></i>
-            <span>The Past Industries en Github</span>
-          </a>
-        </div>
-        <hr>
-        <div>
-          <a href="https://www.kickstarter.com">
-            <i class="fa-brands fa-kickstarter fa-xl"></i>
-            <span>Nuestro Kickstarter</span>
-          </a>
-        </div>
-      </div>
+    <!--ASIDE GITHUB & KICKSTARTER-->
+    <div id="github-button">
+      <i class="fa-brands fa-github fa-xl" onclick="desplegarAside()"></i>
     </div>
-  </aside>
+    <!--ASIDE-->
+    <aside class="aside_izq" id="aside_izq">
+      <div class="github_div">
+        <div class="github_header">
+          <img src="images/logoindustries.png" alt="The Past Industries">
+          <div>  
+            <p>The Past Industries</p>
+            <p>Github & Kickstarter</p>
+          </div>
+        </div>
+        <img src="images/game_preview1.png" alt="Preview del proyecto.">
+        <div class="github_footer_text">
+          <p>Puedes seguir el proyecto de cerca en <span>GITHUB</span> y apoyar nuestro <span>KICK</span><span>STARTER</span>.</p>
+        </div>
+        <div class="github_footer_links">
+          <div>
+            <a href="https://github.com/The-Past-Industries">
+              <i class="fa-brands fa-github fa-xl"></i>
+              <span>The Past Industries en Github</span>
+            </a>
+          </div>
+          <hr>
+          <div>
+            <a href="https://www.kickstarter.com">
+              <i class="fa-brands fa-kickstarter fa-xl"></i>
+              <span>Nuestro Kickstarter</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <!--MAIN-->
+    <main class="main">
+      <section id="section1">
+        <article id="categorias">
+          <a href="#">
+            <figure class="categoria">
+              <img src="./images/logo_01.png" alt="INICIO">
+              <figcaption>INICIO</figcaption>
+            </figure>
+          </a>
+          <a href="#">
+            <figure class="categoria">
+              <img src="./images/personajes.png" alt="PERSONAJES">
+              <figcaption>PERSONAJES</figcaption>
+            </figure>
+          </a>
+          <a href="#">
+            <figure class="categoria">
+              <img src="./images/enemigos.png" alt="ENEMIGOS">
+              <figcaption>ENEMIGOS</figcaption>
+            </figure>
+          </a>
+          <a href="#">
+            <figure class="categoria">
+              <img src="./images/objetos.png" alt="OBJETOS">
+              <figcaption>OBJETOS</figcaption>
+            </figure>
+          </a>
+          <a href="#">
+            <figure class="categoria">
+              <img src="./images/mundo.png" alt="MUNDO">
+              <figcaption>MUNDO</figcaption>
+            </figure>
+          </a>
+        </article>
+      </section>
 
-  <!--MAIN-->
-  <main class="main">
-    <p>hola</p>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-  </main>
+      <span id="separacion1"></span>
+
+      <section id="section2">
+        <article>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi iure vel omnis dignissimos nam dolore enim error nihil quidem deleniti maiores quis aliquid id, perferendis qui, nesciunt aspernatur. Non enim nam fuga reiciendis voluptatibus eaque, molestias quo cupiditate. Ipsum alias exercitationem laborum rerum ipsam earum numquam sapiente laudantium harum?</p>
+        </article>
+      </section>
+
+      <span id="separacion1"></span>
+
+      <section id="section3">
+        <img src="./images/expo1.webp" alt="Concept-Art-1">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi consequuntur dignissimos hic, quis praesentium amet pariatur eligendi nobis at magni!</p>
+      </section>
+      
+      <span id="separacion2"></span>
+
+      <section id="section4">
+        <img src="./images/expo2.webp" alt="Concept-Art-2">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni nobis doloribus accusantium eaque est. Deserunt distinctio omnis maxime possimus a?</p>
+      </section>
+
+      <span id="separacion2"></span>
+      
+    </main>
+    <footer>
+      <p>The Past Wiki - 2024</p>
+    </footer>
   </div>
 </body>
 
@@ -152,6 +218,21 @@
       menu.style.display = 'block';
     }
   }
-  </script>
+  
+  var asideOnOff = false;
+  function desplegarAside() {
+    var aside = document.getElementById('aside_izq');
+    var githubBtn = document.getElementById('github-button');
+    if (asideOnOff) {
+      aside.style.transform = 'translateX(-100%)';
+      githubBtn.style.transform = 'translate(0, 115px)';
+      asideOnOff = false;
+    } else {
+      aside.style.transform = 'translateX(0)';
+      githubBtn.style.transform = 'translate(65vw, 115px)';
+      asideOnOff = true;
+    }
+  }
+</script>
 
 </html>
